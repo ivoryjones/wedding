@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background-color:#E5E2E4;
+}	
+.title {
+	background-color:#56387B;
+	border-radius:100px;
+	border-style:double;
+	border-width:10px;
+	border-color:#FFFFFF;
+}
+h1 {
+	font-family:alex-brush;
+	color:#E5E2E4;
+	padding-top:20px
+}
+p {
+	font-family:alex-brush;
+	font-size:20px;
+	color:#E5E2E4;
+	padding-bottom:20px;
+	margin-top:-15px;
+}
+			:root
+			{
+				background: #000;
+			}
+			
+			#wrapper
+			{
+				width: 100%;
+				
+				position: relative;
+			}
+			
+			#temp
+			{
+				width:320px;
+				
+				position: relative;
+				
+				margin: 0 auto;
+			}
+			
+			.snow
+			{
+				position: absolute;
+			}
+			
+			.snowTween
+			{
+				visibility: hidden;				
+			}
+			
+			.snowInner
+			{
+				
+			}
+			
+			.snowFlake
+			{
+				width: 3px;
+				height: 3px;
+			
+				background: url(http://www.simonkinslow.com/_2013/snow/__assets/_img/flake.png) no-repeat left top;
+				
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden; 
+			}
+			
+			
+			@-webkit-keyframes snowFall
+			{
+				from	 {-webkit-transform: translateY(-300px);}
+				to		 {-webkit-transform: translateY(600px);}
+			}
+			
+			@-webkit-keyframes snowFallTurn
+			{
+				from	{-webkit-transform: rotate(0deg);}
+				to		{-webkit-transform: rotate(360deg);}
+			}
+			
+			@keyframes snowFall
+			{
+				from	 {transform: translateY(-300px);}
+				to		 {transform: translateY(600px);}
+			}
+			
+			@keyframes snowFallTurn
+			{
+				from	{transform: rotate(0deg);}
+				to		{transform: rotate(360deg);}
+			}
